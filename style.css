@@ -1,0 +1,34 @@
+/* Header start*/
+
+html{
+    scroll-behavior: smooth;
+}
+html *{
+    font-family: 'GothamPro', serif;
+    margin-left:auto;
+    margin-right: auto;
+    scroll-behavior: smooth;
+    margin:0;
+    padding: 0;
+}
+.menu{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.logo{
+    color: Yellow;
+    font-size: 30pt;
+}
+.logo span{
+    color:red;
+}
+.menu ul{
+    list-style:none;
+    display:inline-flex
+}
+
