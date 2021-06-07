@@ -54,7 +54,7 @@ html *{
     transition: all 0.3s;
 }
 .navbar ul li a:hover{
-    color:rgb(33, 33, 33);
+    color:rgb(250, 249, 246);
 }
 .dropdown{
     display: none;
@@ -93,10 +93,20 @@ html *{
 
 
 /* Working onn background image */
-.container{
-    
-}
 
+.center{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    color: rgb(250, 249, 246);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 16px 30px; 
+    font-style: italic ;
+    text-transform: uppercase;
+    text-shadow: 3px 5px 2px #474747;
+    
+}   
 
 
 .container .button{
@@ -111,5 +121,6 @@ html *{
     padding: 16px 30px;
     border-radius: 10px;
     text-decoration: none;
+    
 }
 
