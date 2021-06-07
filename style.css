@@ -5,43 +5,86 @@ html{
 }
 html *{
     font-family: 'GothamPro', serif;
-    margin-left:auto;
-    margin-right: auto;
     scroll-behavior: smooth;
+}
+
+*{
     margin:0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: crimson;
+    height: 80px;
     width: 100%;
 }
-
-body{
-    margin-bottom: 0;
-
-}
-.container{
-    position: relative;
-    text-align: center;
-    color: red;
-
-}
-.logo{
-    position: absolute;
-    top: 20px;
-    right: 780px;
-    font-size: 35pt;
-    color:red;
-    font-weight: bold;
+.logo {
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: 700;
+    border: 5px solid yellow;
+    margin: 0%;
+    padding: 10px
 }
 .logo span{
-    color: red;
-}
-.Menu ul{
-    float: right;
-    margin-right : 20px;
+    color: white;
 }
 
-.Menu ul li{
+
+
+.navbar ul{
+    float:right;
+    margin-right: 20px;
+}
+.navbar ul li{
     list-style: none;
-    display: inline-block00;
+    display: inline-block;
+    line-height: 80px;
+    margin:0 15px;
+    position: relative;
+}
+.navbar ul li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.navbar ul li a:hover{
+    color:crimson;
+}
+.dropdown{
+    display: none;
+}
+.navbar ul li:hover .dropdown{
+    display:block;
+    position: absolute;
+    left: -20px;
+    top: 98%;
+    
+}
+.navbar ul li:hover .dropdown ul{
+    display: block;
+    margin:5px;
    
+}
+.navbar ul li:hover  .dropdown ul li{
+    width: 150px;
+    padding: 5px;
+   
+}
+.dropdown ul li a{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+.navbar ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 98%;
+    background-color: crimson;  
 }
