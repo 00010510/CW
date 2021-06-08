@@ -49,7 +49,7 @@
    <!--Starting body-->
     <body>
     <div class="Courses"><h1>Popular Courses</h1></div>
-         <div class="txt">The popular courses among our customers</div>
+         <div class="txt"></div>
 
   <div id="videos">
     
@@ -68,27 +68,51 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/vEROU2XtPR8" title="YouTube video player"
              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
+          
   </div>
+   
   <!--Contact section -->
-  
-    <div class="container_cnt">
-     <div style="text-align: center;">
-      <h1>Contact us</h1>
+  <div class="form1">
+    <div class="contact" id="contact">
+      <h2 onclick="toggleClass()">Contact us <span> +</span></h2>
+      <form>
+        <div class="row">
+          <div class="col-2">
+             <label>First Name</label>
+             <input type="text" name="" class="text" id="name"
+             placeholder="Name">
+          </div>
+          <div class="col-2">
+            <label>Last Name</label>
+            <input type="text" name="" class="text" id="surname"
+            placeholder="Surname">
+         </div>
+         <div class="col-2">
+          <label>Email Address</label>
+          <input type="email" name="" class="text" id="email"
+          placeholder="myemail@gmail.com">
+       </div>
+       <div class="col-2">
+         <label>Phone number</label>
+         <input type="text" name="" class="text" id="number"
+         placeholder="+998-90-123-156">
+       </div>
+        </div>
+          <div class="row">
+            <div class="col-1">
+              <label>Your Message</label> 
+              <textarea id ="message" placeholder="Write your message here..."></textarea> 
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <input type="submit" name="" value="Send message">
+              </div>
+          </div>
+      </form>
     </div>
-    <div class="row">
-      <div class="column"></div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-    </body>
+    <script src="Scripts/Contact.js" charset="utf-8"></script>
+    <!--Footer-->
+    
 
 
 
@@ -100,7 +124,7 @@
 
 
 
-
+  </div>
 
 
 
