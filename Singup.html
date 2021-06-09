@@ -5,7 +5,8 @@
      <meta name="viewport" content="width=device-width,  initial-scale=1.0">
      <title>MyCources</title>
   <!-- Link to the stylesheet -->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/Styles/style.css">
+<link rel="stylesheet" href="/Styles/Login.css">
   <!-- Link to the tab icon -->
 <link rel="icon" href="images/logo.jpg">
   <!-- Link to the font -->
@@ -33,10 +34,7 @@
         </li>
 
         <li><a href="About.html" class="navb">About</a></li>
-      
-        
-        <li><a href="Singup.html" class="navb">Sign up</a></li>
-        <li><a href="Login.html"  class="navb">Log in</a></li>
+        <li><a href="Singup.html" class="navb" id="border">Sign up / Log in</a></li>
       </ul>
     </div>
 
@@ -44,29 +42,85 @@
 <!--Body-->
 <body>
 
+ <div class="container_l">
+   <form class="form" id="login">
+    <h1 class="form__title">Login</h1>
+    <div class="form__message form__message--error"></div>
+    <div class="form__input-group">
+      <input type="text" class="form__input" autofocus placeholder="Username or email">
+      <div class="form__input-error-message"></div>
+    </div>
+    <div class="form__input-group">
+      <input type="password" class="form__input" autofocus placeholder="Password">
+      <div class="form__input-error-message"></div>
+    </div>
+    <button class="form__button" type="submit">Sign in</button>
+
+    <p class="form__text">
+      <a href="#" class="form__link">Forgot your password?</a>
+    </p>
+    <p class="form__text">
+      <a href="#" class="form__link" id="linkCreateAccount"> Don't have an account? Create account here...</a>
+    </p>
+
+   </form>
+   <form class="form form--hidden" id="createAccount">
+    <h1 class="form__title">Create Account</h1>
+    <div class="form__message form__message--error"></div>
+    <div class="form__input-group">
+      <input type="text" id="usernameCreate" class="form__input" autofocus placeholder="Username">
+      <div class="form__input-error-message"></div>
+    </div>
+    <div class="form__input-group">
+      <input type="text" class="form__input" autofocus placeholder="Email Address">
+      <div class="form__input-error-message"></div>
+    </div>
+    <div class="form__input-group">
+      <input type="password" class="form__input" autofocus placeholder="Password">
+      <div class="form__input-error-message"></div>
+    </div>
+    <div class="form__input-group">
+      <input type="password" class="form__input" autofocus placeholder="Confirm Password">
+      <div class="form__input-error-message"></div>
+    </div>
+    <button class="form__button" type="submit">Continue</button>
+
+    <p class="form__text">
+      <a href="#" class="form__link" id="linkLogin"> Already have an account? Sign in...</a>
+    </p>
+
+   </form>
+ </div>
+ <script src="Scripts/Login.js"></script>
+
+
+
 
 
 </body>
+
 <!--Footer-->
-<footer>
-  <div class ="linksec">
-    <a href="index.html" class="link"> Home</a>
-    <a href="Categories.html" class="link"> Categories</a>
-    <a href="F.A.Q..html" class="link"> F.A.Q.</a>
-    <a href="Singin.html" class="link"> Sign up</a>
-    <a href="Login.html" class="link"> Log in</a>
-  </div>
-      <div class ="social">
-       <a href="#" target="_blank"><img src="images/instagram.png" alt="instagram" class="social-icon"></a>
-       <a href="#" target="_blank"><img src="images/facebook.png" alt="facebook" class="social-icon"></a>
-      </div>
-    <div class="cp">
-      <span class="copyright">©WIUT </span><span id="year" class="copyright"></span>
-       <script src="Scripts/year.js" charset="utf-8"></script>
+  <footer>
+    <div class ="linksec">
+      <a href="index.html" class="link"> Home</a>
+     
+      <a href="F.A.Q..html" class="link"> F.A.Q.</a>
+      <a href="Singin.html" class="link"> Sign up</a>
+      <a href="Login.html" class="link"> Log in</a>
     </div>
-  </footer>
-   <div class="bottom">
-     <span class="bottom-txt">"This website was created to fulfill Web Technology module’s requirements and does not
-      represent an actual company or service”.</span>
-   </div>
+        <div class ="social">
+         <a href="#" target="_blank"><img src="images/instagram.png" alt="instagram" class="social-icon"></a>
+         <a href="#" target="_blank"><img src="images/facebook.png" alt="facebook" class="social-icon"></a>
+        </div>
+      <div class="cp">
+        <span class="copyright">©WIUT </span><span id="year" class="copyright"></span>
+         <script src="Scripts/year.js" charset="utf-8"></script>
+      </div>
+  
+     <div class="bottom">
+       <span class="bottom-txt">"This website was created to fulfill Web Technology module’s requirements and does not
+        represent an actual company or service”.</span>
+     </div>
+
+    </footer>
 </html>

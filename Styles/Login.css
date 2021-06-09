@@ -1,0 +1,104 @@
+/*rgb(250, 249, 246); white
+ rgb(33, 33, 33); black
+ rgb(169,169,169); grey*/
+
+
+body{
+   margin: 0;
+   display: flex;
+   align-items: center;
+   --color-error: red;
+   --color-success: green;
+}
+.container_l{
+width: 400px;
+max-width: 400px;
+margin: 70px;
+padding: 20px;
+box-shadow: 0 0 40px  rgb(169,169,169);
+border-radius: 2px;
+background: rgb(250, 249, 246);
+
+}
+.container_l,
+.form__input,
+.form__button{
+    font-weight: 600;
+}
+.form--hidden{
+    display: none;
+}
+.form >*:first-child{
+    margin-top: 0;
+}
+.form >*:last-child{
+    margin-top: 0;
+}
+.form__message {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.form__message--error{
+    color: var(--color-error);
+}
+.form__message--success{
+    color: var(--color-success);
+}
+.form__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20pt;
+}
+.form__input-group{
+ margin-bottom: 10px;
+
+}
+.form__input{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid darkgrey;
+    outline: none;
+    background:lightgrey; 
+    font-size: 12pt;
+    margin-bottom: 10px;
+
+}
+.form__input-error-message  {
+    color: var(--color-error);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.form__button{
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: rgb(250, 249, 246);
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    background: rgb(33,33,33);
+    margin-bottom: 10px;
+}
+.form__button:hover {
+    background: black;
+}
+.form__button:active {
+    transform: scale(0.98);
+}
+.form__text{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.form__link{
+    color:rgb(33,33,33);
+     text-decoration: none;
+     cursor: pointer;
+}
+.form__link:hover{
+    text-decoration: underline;
+}
