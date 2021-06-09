@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+     <title>MyCources</title>
+  <!-- Link to the stylesheet -->
+<link rel="stylesheet" href="style.css">
+  <!-- Link to the tab icon -->
+<link rel="icon" href="images/logo.jpg">
+  <!-- Link to the font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+  <!--Header-->
+
+<div class="navbar">
+  <label class="logo">My<span>Courses</span></label>
+ 
+ 
+   <ul>
+     <li> <a href="index.html" class="navb-active">Home</a></li>
+     <li><a href="#" class="navb">Categories</a>
+      <div class="dropdown">
+          <ul>
+               <li><a href ="#">HTML</a></li>
+               <li><a href ="#">JavaScript</a></li>
+               <li><a href ="#">Python</a></li>
+               <li><a href ="#">C++</a></li>             
+          </ul>
+      </div>
+     </li>
+
+     <li><a href="About.html" class="navb">About</a></li>
+   
+     
+     <li><a href="Singup.html" class="navb">Sign up</a></li>
+     <li><a href="Login.html"  class="navb">Log in</a></li>
+   </ul>
+ </div>
+ <!--Header ends-->
+ <!--Body part-->
+ <body>
+ <div class="container1">
+   <img src="images/about.jpg" alt="AboutUs" class="img_a">
+     <div class="text_ab"><h2>About us</h2></div>
+      <div class="txt1"><p>dafwawfasfafwawfafsf fwafawfafwaf</p></div>
+ </div>
+<div class="container2">
+  <img src="images/mission.jpg" alt="OurMission" class="img_b">
+    <div class="text_ab1"><h2>Our mission</h2></div>
+      <div class="txt2"><p>dawkfoaowfaofkk  fowafoawofol</p></div>
+</div>
+
+ </body>
+<!--Contact us form-->
+ <section class="cnt">
+  <div class="form1">
+    <div class="contact" id="contact">
+      <h2 onclick="toggleClass()">Contact us <span> +</span></h2>
+      <form>
+        <div class="row">
+          <div class="col-2">
+             <label>First Name</label>
+             <input type="text" name="" class="text" id="name"
+             placeholder="Name">
+          </div>
+          <div class="col-2">
+            <label>Last Name</label>
+            <input type="text" name="" class="text" id="lastname"
+            placeholder="Last Name">
+         </div>
+         <div class="col-2">
+          <label>Email Address</label>
+          <input type="email" name="" class="text" id="email"
+          placeholder="myemail@gmail.com">
+       </div>
+       <div class="col-2">
+         <label>Phone number</label>
+         <input type="text" name="" class="text" id="number"
+         placeholder="+998-90-123-156">
+       </div>
+        </div>
+          <div class="row">
+            <div class="col-1">
+              <label>Your Message</label> 
+              <textarea id ="message" placeholder="Write your message here..."></textarea> 
+            </div>
+            <div class="row">
+              <div class="col-1">
+                <input type="submit" id= "submit" name="" value="Send message">
+              </div>
+          </div>
+      </form>
+    </div>
+    </div>
+    <script src="Scripts/Send.js" charset="utf-8"></script>
+    <script src="Scripts/Contact.js" charset="utf-8"></script>
+  </section>
+
+ <!--Footer-->
+<footer>
+  <div class ="linksec">
+    <a href="index.html" class="link"> Home</a>
+    <a href="Categories.html" class="link"> Categories</a>
+    <a href="F.A.Q..html" class="link"> F.A.Q.</a>
+    <a href="Singin.html" class="link"> Sign up</a>
+    <a href="Login.html" class="link"> Log in</a>
+  </div>
+      <div class ="social">
+       <a href="#" target="_blank"><img src="images/instagram.png" alt="instagram" class="social-icon"></a>
+       <a href="#" target="_blank"><img src="images/facebook.png" alt="facebook" class="social-icon"></a>
+      </div>
+    <div class="cp">
+      <span class="copyright">©WIUT </span><span id="year" class="copyright"></span>
+       <script src="Scripts/year.js" charset="utf-8"></script>
+    </div>
+  </footer>
+   <div class="bottom">
+     <span class="bottom-txt">"This website was created to fulfill Web Technology module’s requirements and does not
+      represent an actual company or service”.</span>
+   </div>
+</html>

@@ -15,7 +15,7 @@ SendContact.onclick =(event) => {
 
    });
   } else {
-      alert('Please, fill the fields')
+      alert('Please, provide the information')
   }
 
 }
